@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="back1" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomerRegistrationController">
+   <children>
+      <TextField fx:id="customerName" layoutX="140.0" layoutY="147.0" promptText="Name" />
+      <PasswordField fx:id="customerPassword" layoutX="140.0" layoutY="201.0" promptText="Password" />
+      <TextArea fx:id="customerAddress" layoutX="140.0" layoutY="263.0" prefHeight="84.0" prefWidth="200.0" promptText="Address" />
+      <TextField fx:id="customerEmail" layoutX="140.0" layoutY="379.0" promptText="Email Id" />
+      <ComboBox fx:id="customerCountry" layoutX="140.0" layoutY="430.0" onAction="#customerCountry" prefHeight="31.0" prefWidth="200.0" promptText="Choose Country" />
+      <ComboBox fx:id="customerState" layoutX="140.0" layoutY="485.0" prefHeight="31.0" prefWidth="200.0" promptText="Choose State" />
+      <TextField fx:id="customerDocNumber" layoutX="553.0" layoutY="248.0" promptText="Document Details Number" />
+      <ComboBox fx:id="customerDocument" layoutX="553.0" layoutY="200.0" prefHeight="31.0" prefWidth="200.0" promptText="Choose Document" />
+      <Label layoutX="400.0" layoutY="305.0" text="Registration Date:" />
+      <Label fx:id="customerRegDate" layoutX="553.0" layoutY="305.0" prefHeight="21.0" prefWidth="200.0" />
+      <ComboBox fx:id="vendorType" layoutX="553.0" layoutY="350.0" prefHeight="31.0" prefWidth="200.0" promptText="Vendor Type" />
+      <TextField fx:id="customerBalance" layoutX="553.0" layoutY="485.0" promptText="Balance" />
+      <Button id="login" fx:id="btnSubmit" layoutX="291.0" layoutY="595.0" mnemonicParsing="false" onAction="#Submit" prefHeight="50.0" prefWidth="107.0" text="Submit" />
+      <Button id="login" fx:id="btnReset" layoutX="426.0" layoutY="595.0" mnemonicParsing="false" onAction="#resetDetails" prefHeight="50.0" prefWidth="107.0" text="Reset" />
+      <TextField fx:id="customerContactNumber" layoutX="553.0" layoutY="147.0" promptText="Contact Number" />
+      <Label id="mainTitle" layoutX="158.0" layoutY="33.0" prefHeight="68.0" prefWidth="554.0" text="Customer Registration Form" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerCardNumber" layoutX="553.0" layoutY="415.0" promptText="Card Number" />
+      <ImageView fitHeight="63.0" fitWidth="74.0" layoutX="25.0" layoutY="14.0" onMouseClicked="#homePage" pickOnBounds="true" preserveRatio="true">
+      <image>
+      	<Image url="imgs/home.png" />
+      </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="152.0" text="CustomerName:" />
+      <Label layoutX="20.0" layoutY="205.0" text="Password:" />
+      <Label layoutX="20.0" layoutY="268.0" text="Address:" />
+      <Label layoutX="20.0" layoutY="384.0" text="Email Id:" />
+      <Label layoutX="20.0" layoutY="435.0" text="Country:" />
+      <Label layoutX="20.0" layoutY="490.0" text="State:" />
+      <Label layoutX="400.0" layoutY="152.0" text="Contact Number" />
+      <Label layoutX="400.0" layoutY="206.0" text="Document" />
+      <Label layoutX="400.0" layoutY="253.0" text="Document Number" />
+      <Label layoutX="400.0" layoutY="355.0" text="Vendor Type" />
+      <Label layoutX="400.0" layoutY="420.0" text="Card Number:" />
+      <Label layoutX="400.0" layoutY="490.0" text="Amount Balance:" />
+   </children>
+</AnchorPane>

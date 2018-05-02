@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="back1" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BillController">
+   <children>
+      <Label id="mainTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="236.0" layoutY="34.0" text="Bill Payment Form" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="102.0" text="Enter Details:" textFill="#45b762" />
+      <Label layoutX="46.0" layoutY="147.0" text="Customer ID: " />
+      <TextField fx:id="customerId" layoutX="220.0" layoutY="139.0" prefHeight="37.0" prefWidth="186.0" />
+      <Label layoutX="46.0" layoutY="188.0" text="Vendor Type" />
+      <ComboBox fx:id="vendorType" layoutX="220.0" layoutY="183.0" onAction="#vendorName" prefHeight="31.0" prefWidth="186.0" />
+      <Label layoutX="443.0" layoutY="188.0" text="Vendor Name:" />
+      <ComboBox fx:id="vendorName" layoutX="565.0" layoutY="183.0" prefHeight="31.0" prefWidth="186.0" />
+      <Button id="login" fx:id="btnShowDetails" layoutX="220.0" layoutY="222.0" mnemonicParsing="false" onAction="#showDetails" prefHeight="37.0" prefWidth="186.0" text="Show Customer Details" />
+      <Pane layoutY="284.0" prefHeight="419.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="46.0" layoutY="22.0" text="Customer ID:" />
+            <Label fx:id="cust_id" layoutX="213.0" layoutY="22.0" prefHeight="21.0" prefWidth="96.0" />
+            <Label layoutX="46.0" layoutY="62.0" text="Amount:" />
+            <Label fx:id="pendingAmount" layoutX="220.0" layoutY="62.0" prefHeight="21.0" prefWidth="186.0" />
+            <Label layoutX="46.0" layoutY="107.0" text="Payment Date:" />
+            <Label fx:id="paymentDate" layoutX="220.0" layoutY="107.0" prefHeight="21.0" prefWidth="186.0" />
+            <Label layoutX="46.0" layoutY="156.0" text="Amount to Pay:" />
+            <TextField fx:id="amountToPay" layoutX="220.0" layoutY="151.0" prefHeight="37.0" prefWidth="186.0" />
+            <Label layoutX="46.0" layoutY="199.0" text="Card Details:" />
+            <Label layoutX="46.0" layoutY="240.0" text="Card Number:" />
+            <Label fx:id="cardNumber" layoutX="213.0" layoutY="240.0" prefHeight="21.0" prefWidth="186.0" />
+            <Label layoutX="46.0" layoutY="284.0" text="Confirm Card Number:" />
+            <TextField fx:id="confirmCardNumber" layoutX="220.0" layoutY="279.0" />
+            <Label layoutX="46.0" layoutY="330.0" text="Card Validity:" />
+            <Label layoutX="213.0" layoutY="330.0" text="MM:" />
+            <TextField fx:id="cardMonth" layoutX="263.0" layoutY="325.0" prefHeight="31.0" prefWidth="61.0" />
+            <Label layoutX="213.0" layoutY="375.0" text="YYYY:" />
+            <TextField fx:id="cardYear" layoutX="263.0" layoutY="370.0" prefHeight="31.0" prefWidth="61.0" />
+            <Button id="login" fx:id="btnMakePayment" layoutX="565.0" layoutY="345.0" mnemonicParsing="false" onAction="#makePayment" prefWidth="186.0" text="Make Payement" />
+            <Label layoutX="347.0" layoutY="330.0" text="CVV" />
+            <TextField fx:id="CVV" layoutX="388.0" layoutY="325.0" prefHeight="31.0" prefWidth="55.0" />
+            <Label layoutX="443.0" layoutY="62.0" text="Pending Amount:" />
+            <Label fx:id="amountDueCustomer" layoutX="565.0" layoutY="62.0" prefHeight="21.0" prefWidth="186.0" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="23.0" layoutY="12.0" onMouseClicked="#homePage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/imgs/home.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

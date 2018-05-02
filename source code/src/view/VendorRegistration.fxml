@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="back1" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.VendorRegistrationController">
+   <children>
+      <Label id="mainTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="12.0" text="Vendor Registration Form">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="companyRegNumber" layoutX="170.0" layoutY="147.0" prefHeight="31.0" prefWidth="223.0" promptText="Company Registration Number" />
+      <TextField fx:id="vendorName" layoutX="170.0" layoutY="203.0" prefHeight="31.0" prefWidth="223.0" promptText="Name" />
+      <TextArea fx:id="vendorAddress" layoutX="170.0" layoutY="380.0" prefHeight="77.0" prefWidth="223.0" promptText="Address" />
+      <ComboBox fx:id="vendorCountry" layoutX="170.0" layoutY="479.0" onAction="#vendorCountry" prefHeight="31.0" prefWidth="223.0" promptText="Country" />
+      <ComboBox fx:id="vendorState" layoutX="170.0" layoutY="535.0" prefHeight="31.0" prefWidth="223.0" promptText="State" />
+      <TextField fx:id="vendorEmail" layoutX="611.0" layoutY="151.0" prefHeight="31.0" prefWidth="223.0" promptText="Email" />
+      <TextField fx:id="vendorContactNumber" layoutX="611.0" layoutY="200.0" prefHeight="31.0" prefWidth="223.0" promptText="Contact Number" />
+      <TextField fx:id="vendorWebsite" layoutX="611.0" layoutY="247.0" prefHeight="31.0" prefWidth="223.0" promptText="Website" />
+      <Label layoutX="612.0" layoutY="286.0" prefHeight="21.0" prefWidth="159.0" text="Certificate Issued Date:" />
+      <DatePicker fx:id="certiIssuedDate" layoutX="611.0" layoutY="312.0" prefWidth="223.0" />
+      <Label layoutX="612.0" layoutY="356.0" prefHeight="21.0" prefWidth="159.0" text="Certificate Validity Date:" />
+      <DatePicker fx:id="certiValidityDate" layoutX="611.0" layoutY="382.0" prefWidth="223.0" />
+      <TextField fx:id="employeeCount" layoutX="611.0" layoutY="436.0" prefHeight="31.0" prefWidth="223.0" promptText="Employee Count" />
+      <TextField fx:id="customerCount" layoutX="611.0" layoutY="483.0" prefHeight="31.0" prefWidth="223.0" promptText="Customer Count" />
+      <TextField fx:id="yearOfEstablishment" layoutX="611.0" layoutY="539.0" prefHeight="31.0" prefWidth="223.0" promptText="Year Of Establishment" />
+      <Button id="login" fx:id="register" alignment="CENTER" contentDisplay="CENTER" layoutX="318.0" layoutY="611.0" mnemonicParsing="false" onAction="#registerVendor" prefWidth="150.0" text="Register" textAlignment="CENTER" />
+      <Button id="login" fx:id="reset" alignment="CENTER" contentDisplay="CENTER" layoutX="488.0" layoutY="611.0" mnemonicParsing="false" onAction="#resetDetails" prefHeight="31.0" prefWidth="150.0" text="Reset" />
+      <PasswordField fx:id="vendorPassword" layoutX="170.0" layoutY="259.0" prefHeight="31.0" prefWidth="223.0" promptText="Password" />
+      <ImageView fitHeight="63.0" fitWidth="74.0" layoutX="25.0" layoutY="14.0" onMouseClicked="#homePage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/imgs/home.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="25.0" layoutY="152.0" text="Company Reg. No." />
+      <Label layoutX="25.0" layoutY="205.0" text="Name" />
+      <Label layoutX="25.0" layoutY="264.0" text="Password" />
+      <Label layoutX="25.0" layoutY="324.0" text="Vendor Type" />
+      <Label layoutX="25.0" layoutY="372.0" text="Address" />
+      <Label layoutX="25.0" layoutY="484.0" text="Country" />
+      <Label layoutX="25.0" layoutY="540.0" text="State" />
+      <Label layoutX="470.0" layoutY="156.0" text="Email" />
+      <Label layoutX="470.0" layoutY="205.0" text="Contact number" />
+      <Label layoutX="470.0" layoutY="254.0" text="Website" />
+      <Label layoutX="470.0" layoutY="447.0" text="Employee Count" />
+      <Label layoutX="470.0" layoutY="495.0" text="Customer Count" />
+      <Label layoutX="470.0" layoutY="544.0" text="Establishment Year:" />
+      <ComboBox fx:id="vendorType" layoutX="170.0" layoutY="312.0" prefHeight="31.0" prefWidth="223.0" promptText="Vendor Type" />
+   </children>
+</AnchorPane>

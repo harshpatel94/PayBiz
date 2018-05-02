@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="back" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AdminController">
+   <children>
+      <Button fx:id="btnCustReg" layoutY="560.0" mnemonicParsing="false" onAction="#CustomerRegistrationTab" prefHeight="140.0" prefWidth="185.0" text="Customer Registration" />
+      <Button fx:id="btnCustUpdate" layoutX="185.0" layoutY="560.0" mnemonicParsing="false" onAction="#CustomerUpdationTab" prefHeight="140.0" prefWidth="185.0" text="Customer Update" />
+      <Button fx:id="btnVenReg" layoutX="430.0" layoutY="560.0" mnemonicParsing="false" onAction="#VendorRegistrationTab" prefHeight="140.0" prefWidth="185.0" text="Vendor Registration" />
+      <Button fx:id="btnVenUpdate" layoutX="615.0" layoutY="560.0" mnemonicParsing="false" onAction="#VendorUpdationTab" prefHeight="140.0" prefWidth="185.0" text="Vendor Update" />
+      <Button fx:id="btnBillPayment" layoutX="615.0" layoutY="420.0" mnemonicParsing="false" onAction="#BillPaymentTab" prefHeight="140.0" prefWidth="185.0" text="Bill Payment" />
+      <Label id="adminTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="252.0" layoutY="29.0" prefHeight="68.0" prefWidth="296.0" text="Admin Home" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="430.0" layoutY="420.0" mnemonicParsing="false" onAction="#InsertVendorType" prefHeight="140.0" prefWidth="185.0" text="Vendor Amount for Bill" />
+      <Button fx:id="btnCustomerData" layoutX="185.0" layoutY="420.0" mnemonicParsing="false" onAction="#ViewCustomerData" prefHeight="140.0" prefWidth="185.0" text="View/Delete Customer" />
+      <Button layoutY="420.0" mnemonicParsing="false" onAction="#ViewVendorData" prefHeight="140.0" prefWidth="185.0" text="View/Delete Vendor" />
+      <Button layoutX="665.0" layoutY="15.0" mnemonicParsing="false" onAction="#logOut" prefHeight="85.0" prefWidth="108.0" text="Log Out" />
+   </children>
+</AnchorPane>

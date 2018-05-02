@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="back1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomerUpdateController">
+   <top>
+      <Label id="mainTitle" contentDisplay="CENTER" text="Customer Update Form" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <VBox prefHeight="330.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="700.0" prefWidth="800.0">
+               <children>
+                  <TextField fx:id="customerId" alignment="CENTER" layoutX="135.0" layoutY="113.0" prefHeight="34.0" prefWidth="200.0" promptText="Customer ID" />
+                  <TextField fx:id="customerName" layoutX="135.0" layoutY="215.0" prefHeight="37.0" prefWidth="200.0" promptText="Name" />
+                  <TextArea fx:id="customerAddress" layoutX="135.0" layoutY="276.0" prefHeight="58.0" prefWidth="200.0" promptText="Address" />
+                  <TextField fx:id="customerEmail" layoutX="135.0" layoutY="363.0" prefHeight="31.0" prefWidth="200.0" promptText="Email ID" />
+                  <ComboBox fx:id="customerCountry" layoutX="135.0" layoutY="430.0" onAction="#customerCountry" prefHeight="31.0" prefWidth="200.0" promptText="Choose Country" />
+                  <ComboBox fx:id="customerState" layoutX="135.0" layoutY="500.0" prefHeight="31.0" prefWidth="200.0" promptText="Choose State" />
+                  <TextField fx:id="customerContactNumber" layoutX="543.0" layoutY="215.0" prefWidth="200.0" promptText="Contact Number" />
+                  <ComboBox fx:id="customerDocument" layoutX="543.0" layoutY="274.0" prefHeight="31.0" prefWidth="200.0" promptText="Choose Document" />
+                  <TextField fx:id="customerDocNumber" layoutX="543.0" layoutY="332.0" prefWidth="200.0" promptText="Document Detail Number" />
+                  <ComboBox fx:id="vendorType" layoutX="543.0" layoutY="389.0" prefHeight="31.0" prefWidth="200.0" promptText="Vendor Type" />
+                  <TextField fx:id="customerCardNumber" layoutX="543.0" layoutY="446.0" prefWidth="200.0" promptText="Card Number" />
+                  <TextField fx:id="customerBalance" layoutX="543.0" layoutY="500.0" promptText="Balance" />
+                  <Button id="login" fx:id="btnUpdate" layoutX="300.0" layoutY="561.0" mnemonicParsing="false" onAction="#updateDetails" prefWidth="200.0" text="Update Details" />
+                  <Button id="login" fx:id="btnFind" layoutX="372.0" layoutY="107.0" mnemonicParsing="false" onAction="#selectUser" text="Find">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="63.0" fitWidth="74.0" layoutX="25.0" layoutY="14.0" onMouseClicked="#homePage" pickOnBounds="true" preserveRatio="true">
+      <image>
+                        <Image url="imgs/home.png" />
+      </image>
+      </ImageView>
+                  <Label layoutX="50.0" layoutY="220.0" text="Name:" />
+                  <Label layoutX="50.0" layoutY="279.0" text="Address:" />
+                  <Label layoutX="50.0" layoutY="368.0" text="Email Id:" />
+                  <Label layoutX="50.0" layoutY="435.0" text="Country:" />
+                  <Label layoutX="50.0" layoutY="505.0" text="State:" />
+                  <Label layoutX="400.0" layoutY="220.0" text="Contact Number:" />
+                  <Label layoutX="400.0" layoutY="279.0" text="Document:" />
+                  <Label layoutX="400.0" layoutY="337.0" text="Document Number" />
+                  <Label layoutX="400.0" layoutY="394.0" text="Vendor Type:" />
+                  <Label layoutX="400.0" layoutY="451.0" text="Card Number:" />
+                  <Label layoutX="400.0" layoutY="505.0" text="Amount Balance:" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
